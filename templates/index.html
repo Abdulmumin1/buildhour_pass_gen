@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="author=abdulmumin">
+	<title>password generator</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css')}}">
+</head>
+<body>
+	<h1 class="head" id='head'>BUILDHOUR</h1>
+	<div id='box'>
+			<p id ='items'></p>
+			<h2 style="color: black; overflow: hidden;">Password<br>Generator</h2>
+			<p id='p_here'></p>
+			<button id='but1' onclick="copy_text()">copy</button>
+			<hr class='line'>
+
+			<button id='but' onclick='gen_random_color({{list_p}})'>Generate</button>
+		
+	</div>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/index.js')}}"></script>
+</body>
+</html>
