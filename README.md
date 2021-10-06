@@ -1,1 +1,1 @@
-# buildhour_pass_gen
+Simple password generator website
