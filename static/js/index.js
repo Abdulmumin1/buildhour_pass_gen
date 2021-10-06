@@ -33,13 +33,17 @@ function gen_random_color(name) {
 
 function copy_text() {
 	let but = document.getElementById('but1');
+
+	let text_p = document.getElementById('p_here');
+	let range = document.createRange();
+	range.selectNode(text_p);
+	window.getSelection().removeAllRanges();
+	window.getSelection().addRange(range)
+	document.execCommand('copy')
+	window.getSelection().removeAllRanges()
 	but.innerText = 'copied';
 	copied = true;
 	but.disabled = true;
-	let text_p = document.getElementById('p_here');
-	navigator.clipboard.writeText(text_p.innerText);
-
-
 }
 
 gen_random_color(['Click Generate', null])
