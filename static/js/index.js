@@ -13,8 +13,10 @@ function gen_random_color(name) {
 	let green = gen_random();
 
 	let box = document.getElementById('box');
+	let advurr = document.getElementById('head');
 	let color =  `rgb(${red},${green},${blue})`
 	box.style.backgroundColor = color;
+	advurr.style.color = color;
 
 	
 	let p = document.getElementById('p_here');
