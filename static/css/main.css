@@ -56,7 +56,7 @@ body{
 
 .head{
   font-size: 50px;
-   text-shadow:0 0 5px rgb(251, 155, 22),0 0 6px orangered;
+  text-shadow:0 0 5px rgb(0, 0, 0),0 0 6px white;
   text-align: center !important;
   color: #333;
 }
